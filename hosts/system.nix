@@ -57,11 +57,9 @@
       frp
       sops
       gnupg
-      v2raya
     ];
   };
   services.dbus.enable = true;
-  services.v2raya.enable = true;
 
   nix = {
     settings = {

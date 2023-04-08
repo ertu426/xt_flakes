@@ -126,6 +126,7 @@
       pkgs.sway-contrib.grimshot
       flameshot
       grim
+      v2raya
     ];
   };
 
@@ -138,6 +139,7 @@
     dbus.packages = [ pkgs.gcr ];
     getty.autologinUser = "${user}";
     gvfs.enable = true;
+    v2raya.enable = true;
     pipewire = {
       enable = true;
       alsa.enable = true;
