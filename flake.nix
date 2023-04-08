@@ -4,7 +4,6 @@
   outputs = inputs @ { self, nixpkgs, flake-parts, ... }:
     let
       user = "xiati";
-      domain = "rayxi.top";
       selfPkgs = import ./pkgs;
     in
     flake-parts.lib.mkFlake { inherit inputs; } {
@@ -23,18 +22,6 @@
             #run by `nix devlop` or `nix-shell`(legacy)
             default = import ./shell.nix { inherit pkgs; };
             #run by `nix devlop .#<name>`
-            blog = with pkgs; mkShell {
-              name = "blog";
-              nativeBuildInputs = [
-                hugo
-              ];
-              shellHook = ''
-                export PS1="\e[0;32m(Blog)\$ \e[m" 
-                cd ./blog
-                cp -r ./static/hugo-theme-stack ./themes/
-                #hugo server --buildDrafts --forceSyncStatic
-              '';
-            };
             secret = with pkgs; mkShell {
               name = "secret";
               nativeBuildInputs = [
