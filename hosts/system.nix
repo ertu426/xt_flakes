@@ -23,7 +23,7 @@
   security.rtkit.enable = true;
   services = {
     openssh = {
-      enable = true;
+      enable = false;
     };
   };
   environment = {
