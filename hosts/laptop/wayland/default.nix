@@ -125,7 +125,6 @@
       imagemagick
       pkgs.sway-contrib.grimshot
       flameshot
-      v2raya
       grim
     ];
   };
