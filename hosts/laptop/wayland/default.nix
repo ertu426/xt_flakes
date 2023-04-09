@@ -30,6 +30,8 @@
       aichat
       chatgpt-cli
       bili_tui
+      upower
+      microsoft-edge
     ]) ++ (with config.nur.repos;[
       linyinfeng.icalingua-plus-plus
     ]);
