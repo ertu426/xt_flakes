@@ -254,7 +254,7 @@
       #------------------------#
       # quickly launch program #
       #------------------------# 
-      bind=$mainMod,B,exec,nvidia-offload firefox --ozone-platform=wayland
+      bind=$mainMod,B,exec,nvidia-offload firefox
       bind=$mainMod,M,exec,netease-cloud-music-gtk4 
       bind=$mainMod SHIFT,M,exec,kitty --class="musicfox" --hold sh -c "musicfox" 
       bind=$mainMod SHIFT,D,exec,kitty --class="danmufloat" --hold sh -c "export TERM=xterm-256color && bili"
