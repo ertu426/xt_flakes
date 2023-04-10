@@ -4,6 +4,7 @@
   imports =
     (import ../../../modules/hardware) ++
     (import ../../../modules/virtualisation) ++
+    (import ../../../modules/network) ++
     [
       ../hardware-configuration.nix
       ../../../modules/fonts
@@ -129,6 +130,7 @@
       flameshot
       grim
       v2raya
+      clash-verge
     ];
   };
 
@@ -141,7 +143,7 @@
     dbus.packages = [ pkgs.gcr ];
     getty.autologinUser = "${user}";
     gvfs.enable = true;
-    v2raya.enable = true;
+    v2raya.enable = false;
     pipewire = {
       enable = true;
       alsa.enable = true;
