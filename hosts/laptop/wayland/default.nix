@@ -131,6 +131,7 @@
       grim
       v2raya
       clash-verge
+      dotnet-sdk_7
     ];
   };
 
