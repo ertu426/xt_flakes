@@ -19,15 +19,16 @@
       QT_AUTO_SCREEN_SCALE_FACTOR = "1";
       WLR_DRM_DEVICES = "/dev/dri/card1:/dev/dri/card0";
       # WLR_NO_HARDWARE_CURSORS = "1"; # if no cursor,uncomment this line  
-      GBM_BACKEND = "nvidia-drm";
+      #GBM_BACKEND = "nvidia-drm";
       CLUTTER_BACKEND = "wayland";
       __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-      # LIBVA_DRIVER_NAME = "nvidia";
+      LIBVA_DRIVER_NAME = "nvidia";
       WLR_RENDERER = "vulkan";
       #__NV_PRIME_RENDER_OFFLOAD="1";
 
       XDG_CURRENT_DESKTOP = "Hyprland";
       XDG_SESSION_DESKTOP = "Hyprland";
+      XDG_SESSION_TYPE = "wayland";
       XDG_CACHE_HOME = "\${HOME}/.cache";
       XDG_CONFIG_HOME = "\${HOME}/.config";
       XDG_BIN_HOME = "\${HOME}/.local/bin";
