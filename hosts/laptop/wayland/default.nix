@@ -33,6 +33,7 @@
       bili_tui
       upower
       microsoft-edge
+      wpsoffice-cn
     ]) ++ (with config.nur.repos;[
       linyinfeng.icalingua-plus-plus
     ]);
