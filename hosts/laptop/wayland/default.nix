@@ -4,6 +4,7 @@
   imports =
     (import ../../../modules/hardware) ++
     (import ../../../modules/virtualisation) ++
+    (import ../../../modules/network) ++
     [
       ../hardware-configuration.nix
       ../../../modules/fonts
